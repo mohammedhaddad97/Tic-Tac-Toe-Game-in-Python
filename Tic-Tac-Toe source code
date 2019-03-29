@@ -1,0 +1,264 @@
+theBoard = \
+    {
+        '1': '1', '2': '2', '3': '3',
+        '4': '4', '5': '5', '6': '6',
+        '7': '7', '8': '8', '9': '9'
+    }
+
+choices = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+
+def printBoard(board):
+    print()
+    print('\t\t\t\t' + '     |   |     ')
+    print('\t\t\t\t' + '  ' + board['1'] + '  | ' + board['2'] + ' | ' + board['3'])
+    print('\t\t\t\t' + '-----+---+-----')
+    print('\t\t\t\t' + '  ' + board['4'] + '  | ' + board['5'] + ' | ' + board['6'])
+    print('\t\t\t\t' + '-----+---+-----')
+    print('\t\t\t\t' + '  ' + board['7'] + '  | ' + board['8'] + ' | ' + board['9'])
+    print('\t\t\t\t' + '     |   |     ')
+    print()
+
+def takeTurns(choice, mark):
+
+
+        # my new coode
+
+        theBoard[choice] = mark
+
+
+
+        # My previous code
+
+        # if choice == '1':
+        #     theBoard[choice] = mark
+        #
+        # elif choice == '2':
+        #
+        #     theBoard['2'] = mark
+        #
+        #
+        # elif choice == '3':
+        #     theBoard['3'] = mark
+        #
+        #
+        # elif choice == '4':
+        #     theBoard['4'] = mark
+        #
+        #
+        # elif choice == '5':
+        #     theBoard['5'] = mark
+        #
+        #
+        # elif choice == '6':
+        #     theBoard['6'] = mark
+        #
+        #
+        # elif choice == '7':
+        #     theBoard['7'] = mark
+        #
+        #
+        # elif choice == '8':
+        #     theBoard['8'] = mark
+        #
+        #
+        # elif choice == '9':
+        #     theBoard['9'] = mark
+
+def whoWon():
+
+
+    # I wanna update this code to be shorter, But till now i have no idea how\
+    # I will think about that later bcz i'm so exhausted Hahahahah
+
+
+    if (theBoard['1'] == 'O') and (theBoard['2'] == 'O') and (theBoard['3'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['4'] == 'O') and (theBoard['5'] == 'O') and (theBoard['6'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+
+
+    elif (theBoard['7'] == 'O') and (theBoard['8'] == 'O') and (theBoard['9'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['1'] == 'O') and (theBoard['4'] == 'O') and (theBoard['7'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+
+
+    elif (theBoard['2'] == 'O') and (theBoard['5'] == 'O') and (theBoard['8'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['3'] == 'O') and (theBoard['6'] == 'O') and (theBoard['9'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['1'] == 'O') and (theBoard['5'] == 'O') and (theBoard['9'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['3'] == 'O') and (theBoard['5'] == 'O') and (theBoard['7'] == 'O'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer O won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+    # This checks for X player
+
+    if (theBoard['1'] == 'X') and (theBoard['2'] == 'X') and (theBoard['3'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['4'] == 'X') and (theBoard['5'] == 'X') and (theBoard['6'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['7'] == 'X') and (theBoard['8'] == 'X') and (theBoard['9'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['1'] == 'X') and (theBoard['4'] == 'X') and (theBoard['7'] == 'X'):
+        printBoard(theBoard)
+        print('Player X won')
+        print('Congratulatoins!')
+        return 1
+
+
+    elif (theBoard['2'] == 'X') and (theBoard['5'] == 'X') and (theBoard['8'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['3'] == 'X') and (theBoard['6'] == 'X') and (theBoard['9'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['1'] == 'X') and (theBoard['5'] == 'X') and (theBoard['9'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+
+    elif (theBoard['3'] == 'X') and (theBoard['5'] == 'X') and (theBoard['7'] == 'X'):
+        printBoard(theBoard)
+        print('\t\t\t\tPlayer X won')
+        print('\t\t\t\tCongratulatoins!')
+        return 1
+
+print()
+print()
+print('\t\t\t\tWelcome to our best Tic-tac-Toe in the whole world')
+print()
+print()
+
+# This code set X to be the first player, But we can modify it to ask the user who starts
+# mark = 'X'
+
+# This modified code asks the user which one to start with
+
+mark = ''
+
+while (mark != 'X') or (mark != 'x') or (mark != 'O') or (mark != 'o'):
+
+    print('\t\t\t\tWhich player to start (X or Y):')
+    mark = input()
+
+    if (mark == 'X') or (mark == 'x'):
+        mark = 'X'
+        break
+
+    elif (mark == 'O') or (mark == 'o'):
+        mark = 'O'
+        break
+
+
+
+
+for i in range(9):
+
+    printBoard(theBoard)
+
+    print('\t\t\t\tPlayer: ' + mark + ' Choose your slot:')
+    choice = input()
+
+
+    # This while loop checks whether the chosen slot is already taken (or exceeded the range) or not
+    # If it's taken (or exceeded the range) the program will ask the user to re-choose again
+    # If not it will set mark to it
+
+
+    while choice not in theBoard.values():
+
+        if choice not in choices:
+            print('\t\t\t\tExceeded the range')
+            print('\t\t\t\tPlayer: ' + mark + ', Please choose a slot within the board')
+            choice = input()
+
+
+        else:
+            print('\t\t\t\t' + choice + ' is already taken')
+
+            printBoard(theBoard)
+
+            print('\t\t\t\tPlayer: ' + mark + ', Please choose another slot')
+            choice = input()
+
+    takeTurns(choice, mark)
+
+
+    if  whoWon() == 1:
+        break
+
+
+    # This code changes the value of mark to be the opposite of the current value
+    # So, If X it would be O, and if O it would be X
+
+    if mark == 'X':
+
+        mark = 'O'
+
+    else:
+
+        mark = 'X'
+
+    if i == 8:
+        print('\t\t\t\tWithdraw')
+        print('\t\t\t\tBye Bye')
+
